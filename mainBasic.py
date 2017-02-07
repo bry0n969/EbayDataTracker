@@ -22,7 +22,7 @@ def Ebay_Analyzer(maxPages):
 
     while (pageNumber <= maxPages):
 
-        url = 'http://www.ebay.com/sch/i.html?_from=R40|R40&_sacat=0&LH_Complete=1&_udlo=&_udhi=&_ftrt=901&_ftrv=1&_sabdlo=&_sabdhi=&_samilow=&_samihi=&_sadis=15&_stpos=&_sop=13&_dmd=1&_nkw=a&_pgn=' + str(pageNumber) + '&_skc='+ str(((pageNumber-1)*50)) +'&rt=nc'
+        url = 'http://www.ebay.com/sch/m.html?_nkw=&_armrs=1&_from=&LH_Complete=1&_ssn=offroadbelts&_skc=200&rt=nc&_pgn=' + str(pageNumber) + '&_skc='+ str(((pageNumber-1)*50)) +'&rt=nc'
 
         sourceCode = requests.get(url)
         plainText = sourceCode.text
